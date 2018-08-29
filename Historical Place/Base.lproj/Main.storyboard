@@ -1,24 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3hs-Kp-wB3">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Bangladesh-->
+        <scene sceneID="fZa-OZ-MUO">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <tableViewController id="KP5-WO-MOf" customClass="TableViewController" customModule="Historical_Place" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qeq-hp-lvh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="100" id="r9d-eP-EK5" customClass="TableViewCell" customModule="Historical_Place" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r9d-eP-EK5" id="NAR-BO-fdk">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="99.666666666666671"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="round_about" translatesAutoresizingMaskIntoConstraints="NO" id="0EC-hX-l0z">
+                                            <rect key="frame" x="16" y="6" width="133" height="86"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="86" id="8T9-RJ-jW9"/>
+                                                <constraint firstAttribute="width" constant="133" id="wQQ-SA-Hfu"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="201 Gombuj Masjid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Mhg-EY-sUq">
+                                            <rect key="frame" x="157" y="49" width="248" height="25"/>
+                                            <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="20"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="0EC-hX-l0z" firstAttribute="leading" secondItem="NAR-BO-fdk" secondAttribute="leading" constant="16" id="0dh-vO-m7S"/>
+                                        <constraint firstAttribute="bottom" secondItem="0EC-hX-l0z" secondAttribute="bottom" constant="7.5" id="ANo-VT-3fW"/>
+                                        <constraint firstItem="0EC-hX-l0z" firstAttribute="top" secondItem="NAR-BO-fdk" secondAttribute="top" constant="6" id="ONL-AH-IAs"/>
+                                        <constraint firstItem="Mhg-EY-sUq" firstAttribute="top" secondItem="NAR-BO-fdk" secondAttribute="top" constant="49" id="TUJ-Df-hXV"/>
+                                        <constraint firstItem="Mhg-EY-sUq" firstAttribute="leading" secondItem="0EC-hX-l0z" secondAttribute="trailing" constant="8" id="i8E-0P-J17"/>
+                                        <constraint firstAttribute="trailing" secondItem="Mhg-EY-sUq" secondAttribute="trailing" constant="9" id="pC7-u1-Eeb"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cellImageView" destination="0EC-hX-l0z" id="SgL-b4-Sty"/>
+                                    <outlet property="cellTitle" destination="Mhg-EY-sUq" id="e49-E1-0IR"/>
+                                    <segue destination="6rc-43-aux" kind="show" identifier="showDetails" id="GoZ-qa-xCD"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KP5-WO-MOf" id="jCX-0b-S8I"/>
+                            <outlet property="delegate" destination="KP5-WO-MOf" id="jhv-hH-346"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Bangladesh" id="8j9-87-Kgn">
+                        <barButtonItem key="backBarButtonItem" title="back" id="kPu-op-yXp"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ww-RU-w0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="992.75362318840587" y="92.934782608695656"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="xJY-Yn-bXm">
+            <objects>
+                <viewController id="6rc-43-aux" customClass="DetailsViewController" customModule="Historical_Place" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tDW-4O-WvI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyR-SJ-GEI">
+                                <rect key="frame" x="24" y="373" width="366" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.</string>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="201 Gombuj Masjid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="p2B-f7-VzA">
+                                <rect key="frame" x="24" y="311" width="374" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KuK-qw-idY">
+                                <rect key="frame" x="88" y="97" width="243" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Cc-LX-op5">
+                                <rect key="frame" x="20" y="151" width="55" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fug-4I-kbn"/>
+                    </view>
+                    <connections>
+                        <outlet property="animateImage" destination="KuK-qw-idY" id="uGx-dD-bGH"/>
+                        <outlet property="detailImageView" destination="0Cc-LX-op5" id="Ys9-p9-Y1O"/>
+                        <outlet property="detailTextView" destination="zyR-SJ-GEI" id="FuZ-ef-FLt"/>
+                        <outlet property="detailTitle" destination="p2B-f7-VzA" id="ygM-qH-bJO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k9b-tS-IRp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1818.840579710145" y="92.934782608695656"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gB0-Ck-NkS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3hs-Kp-wB3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hXh-iD-JVJ">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.18902146816253662" green="0.96019536256790161" blue="0.27912938594818115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KP5-WO-MOf" kind="relationship" relationship="rootViewController" id="twb-9Y-t16"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y2Z-1X-yiI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1116" y="93"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="round_about" width="340" height="300"/>
+    </resources>
 </document>
