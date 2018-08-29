@@ -44,10 +44,17 @@ class DetailsViewController: UIViewController {
     }
     func animate(imageView: UIImageView, images: [UIImage]) {
         imageView.animationImages = images
-        imageView.animationDuration = 2
-        imageView.animationRepeatCount = 4
+        imageView.animationDuration = 5
+        imageView.animationRepeatCount = 1
         imageView.startAnimating()
-        detailImageView.alpha = 0
+        //detailImageView.alpha = 0
+        print("2nd")
+        imageView.image = detailImageView.image
+    }
+    func show() {
+        //detailImageView.alpha = 1
+        print("3rd")
+        //detailImageView.isHidden = false
     }
     
     
@@ -63,15 +70,17 @@ class DetailsViewController: UIViewController {
         detailTitle.text = sentData1
         
         detailImageView.image = UIImage(named: sentData3)
-        
-        //detailImageView.image = UIImage(named: sentData3)
-        //detailImageView.image?.imageFlippedForRightToLeftLayoutDirection()
-        detailImageView.alpha = 0
+       
         if detailTitle.text == "Round About" {
             
             detailTextView.text = "Indicates that a roundabout is ahead. Slow down when you see this sign."
             
             animate(imageView: animateImage, images: round_about)
+            print("1st")
+            //detailImageView.isHidden = true
+            //imageView.transform = CGAffineTransform(translationX: -256, y: -256)
+            //show()
+            //detailImageView.transform = CGAffineTransform(translationX: 100, y: 0)
         }
         if detailTitle.text == "Double Bend First Left" {
             
@@ -125,12 +134,8 @@ class DetailsViewController: UIViewController {
         if detailTitle.text == "Two way Traffic Straight Ahead" {
             
             detailTextView.text = "A two-way street is a street that allows vehicles to travel in both directions. On most two-way streets, especially main streets, a line is painted down the middle of the road to remind drivers to stay on their side of the road."
-            
-            
-        }
-        
-        
      
+        }
         
     }
 
