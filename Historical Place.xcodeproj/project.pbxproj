@@ -13,6 +13,9 @@
 		FA3B5C9620FD35AC00DF9F9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3B5C9420FD35AC00DF9F9A /* LaunchScreen.storyboard */; };
 		FA3B5C9E20FD37B700DF9F9A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B5C9D20FD37B700DF9F9A /* TableViewController.swift */; };
 		FA3B5CA020FD383600DF9F9A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B5C9F20FD383600DF9F9A /* TableViewCell.swift */; };
+		FA7952BF213C6ACB00B69FB5 /* js in Resources */ = {isa = PBXBuildFile; fileRef = FA7952BC213C6ACB00B69FB5 /* js */; };
+		FA7952C0213C6ACB00B69FB5 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = FA7952BD213C6ACB00B69FB5 /* style.css */; };
+		FA7952C1213C6ACB00B69FB5 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = FA7952BE213C6ACB00B69FB5 /* index.html */; };
 		FAA0DE7220FE83E6009765D8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA0DE7120FE83E6009765D8 /* MapKit.framework */; };
 		FADA69A720FE29D000382ED7 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA69A620FE29D000382ED7 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +29,9 @@
 		FA3B5C9720FD35AC00DF9F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA3B5C9D20FD37B700DF9F9A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		FA3B5C9F20FD383600DF9F9A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		FA7952BC213C6ACB00B69FB5 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = js; sourceTree = "<group>"; };
+		FA7952BD213C6ACB00B69FB5 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		FA7952BE213C6ACB00B69FB5 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		FAA0DE7120FE83E6009765D8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FADA69A620FE29D000382ED7 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +76,9 @@
 				FA3B5C9220FD35AC00DF9F9A /* Assets.xcassets */,
 				FA3B5C9420FD35AC00DF9F9A /* LaunchScreen.storyboard */,
 				FA3B5C9720FD35AC00DF9F9A /* Info.plist */,
+				FA7952BE213C6ACB00B69FB5 /* index.html */,
+				FA7952BC213C6ACB00B69FB5 /* js */,
+				FA7952BD213C6ACB00B69FB5 /* style.css */,
 			);
 			path = "Historical Place";
 			sourceTree = "<group>";
@@ -147,7 +156,10 @@
 			files = (
 				FA3B5C9620FD35AC00DF9F9A /* LaunchScreen.storyboard in Resources */,
 				FA3B5C9320FD35AC00DF9F9A /* Assets.xcassets in Resources */,
+				FA7952C0213C6ACB00B69FB5 /* style.css in Resources */,
+				FA7952C1213C6ACB00B69FB5 /* index.html in Resources */,
 				FA3B5C9120FD35AA00DF9F9A /* Main.storyboard in Resources */,
+				FA7952BF213C6ACB00B69FB5 /* js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

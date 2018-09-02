@@ -8,9 +8,10 @@
 
 import UIKit
 import MapKit
+import WebKit
 
 
-class DetailsViewController: UIViewController {
+class DetailsViewController: UIViewController, WKNavigationDelegate {
     
     var sentData1: String!
     var sentData2: String!
@@ -23,6 +24,14 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var animateImage: UIImageView!
     
 
+    @IBOutlet weak var myWeb: WKWebView!
+    //var webView = WKWebView()
+    var nextRuleCounter = 1
+    
+    @IBAction func NEXT(_ sender: Any) {
+        
+    }
+    
     //for animation
     var isGoingToNext = false
     var round_about: [UIImage] = []
@@ -45,21 +54,25 @@ class DetailsViewController: UIViewController {
     func animate(imageView: UIImageView, images: [UIImage]) {
         imageView.animationImages = images
         imageView.animationDuration = 5
-        imageView.animationRepeatCount = 1
+        imageView.animationRepeatCount = 0
         imageView.startAnimating()
         //detailImageView.alpha = 0
         print("2nd")
         imageView.image = detailImageView.image
     }
-    func show() {
-        //detailImageView.alpha = 1
-        print("3rd")
-        //detailImageView.isHidden = false
-    }
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        /*
+        if let url = Bundle.main.url(forResource: "index", withExtension: "html"){
+            if let htmlData = try? Data(contentsOf: url){
+                let baseUrl = URL(fileURLWithPath: Bundle.main.bundlePath)
+                myWeb.load(htmlData, mimeType: "text/html", characterEncodingName: "UTF-8", baseURL: baseUrl)
+                
+            }
+        }*/
+        
+       
         
         round_about = createImageArray(total: 10, imagePrefix: "round_about")
         heart = createImageArray(total: 4, imagePrefix: "heart")
@@ -71,16 +84,28 @@ class DetailsViewController: UIViewController {
         
         detailImageView.image = UIImage(named: sentData3)
        
-        if detailTitle.text == "Round About" {
+        if detailTitle.text == "Round About" && nextRuleCounter == 1 {
             
             detailTextView.text = "Indicates that a roundabout is ahead. Slow down when you see this sign."
             
             animate(imageView: animateImage, images: round_about)
-            print("1st")
-            //detailImageView.isHidden = true
-            //imageView.transform = CGAffineTransform(translationX: -256, y: -256)
-            //show()
-            //detailImageView.transform = CGAffineTransform(translationX: 100, y: 0)
+            //print("1st")
+            
+            
+            let htmlPath = Bundle.main.path(forResource: "index", ofType: "html")
+            let folderPath = Bundle.main.bundlePath
+            let baseUrl = URL(fileURLWithPath: folderPath, isDirectory: true)
+            do {
+                let htmlString = try NSString(contentsOfFile: htmlPath!, encoding: String.Encoding.utf8.rawValue)
+                myWeb.loadHTMLString(htmlString as String, baseURL: baseUrl)
+            } catch {
+                // catch error
+            }
+           // myWeb.
+            //myWeb.navigationDelegate = self
+            //view = webView
+            //myWeb = view as! WKWebView?
+          
         }
         if detailTitle.text == "Double Bend First Left" {
             

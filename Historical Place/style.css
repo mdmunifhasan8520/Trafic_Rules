@@ -1,0 +1,364 @@
+
+body {
+    margin:0; 
+    padding:0;
+
+}
+#day1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+#morning{
+    background:#ffcc00;
+    position: absolute;
+    width:100%;
+    height:100%;
+    opacity:0;
+}
+#noon{
+   background-color:#ff6600;
+    position: absolute;
+    width:100%;
+    height:100%;
+    opacity:0;
+}
+#night{
+    background:#483e37;
+    position: absolute;
+    width:100%;
+    height:100%; 
+    opacity:0 !important;
+}
+#day2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -329px;
+    left: -130px;
+}
+#tree{
+    position: absolute;
+    width: 400%;
+    height: 700%;
+    top: 0px;
+    left: -100px;
+    z-index:1;
+}
+#day3{
+    position: absolute;
+    width: 100%;
+    height: 83%;
+    top: -55px;
+    left: -13px;
+}
+#cloud{
+        max-width: 219%;
+    max-height: 238%;
+    top: 19px;
+    left: 46px;
+}
+#ice{
+    opacity:0
+}
+#day4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+.raindrop{
+    position: absolute;
+    width: 90%;
+    height: 17%;
+}
+.raindrop path{
+    stroke-width:20;
+}
+#rain{
+      position: absolute;
+    top: 104px;
+    left: -15px;
+}
+#rain1{
+       position: absolute;
+    top: 131px;
+    left: -31px;
+}
+#rain2{
+     position: absolute;
+    top: 148px;
+    left: -31px;
+}
+#rain3{
+     position: absolute;
+    top: 131px;
+    left: -53px;
+}
+#rain4{
+        position: absolute;
+    top: 109px;
+    left: -99px;
+}
+#rain5{
+        position: absolute;
+    top: 129px;
+    left: -80px;
+}
+#rain6{
+    position: absolute;
+    top: 131px;
+    left: -140px;
+}
+#rain7{
+    position: absolute;
+    top: 97px;
+    left: -180px;
+}
+#rain8{
+         position: absolute;
+    top: 77px;
+    left: -210px;
+}
+#rain9{
+        position: absolute;
+    top: 131px;
+    left: -230px;
+}
+#rain10{
+         position: absolute;
+    top: 107px;
+    left: -263px;
+}
+#rain11{
+         position: absolute;
+    top: 131px;
+    left: -290px;
+}
+#rain12{
+         position: absolute;
+    top: 84px;
+    left: -279px;;
+}
+#rain13{
+    position: absolute;
+    top: 68px;
+    left: -313px;
+}
+#rain14{
+    position: absolute;
+    top: 50px;
+    left: -400px;
+}
+#rain15{
+    position: absolute;
+    top: 50px;
+    left: -450px;
+}
+#rain16{
+    position: absolute;
+    top: 50px;
+    left: -420px;
+}
+#rain17{
+    position: absolute;
+    top: 50px;
+    left: -350px;
+}
+#rain18{
+    position: absolute;
+    top: 50px;
+    left: -360px;
+}
+#rain19{
+    position: absolute;
+    top: 50px;
+    left: -350px;
+}
+#rain20{
+    position: absolute;
+    top: 50px;
+    left: -290px;
+}
+
+#rain21{
+    position: absolute;
+    top: 50px;
+    left: -370px;
+}
+#rain22{
+    position: absolute;
+    top: 50px;
+    left: -400px;
+}
+
+#day5{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px; 
+}
+.grass{
+   position: absolute;
+    width: 100%;
+    height: 88%;
+  
+}
+#grass1{
+   position: absolute;
+top: 398px;
+left: -140px;
+    z-index:1;
+}
+#grass2{
+   position: absolute;
+top: 454px;
+left: -170px;
+    z-index:1;
+}
+#grass3{
+    position: absolute;
+top: 458px;
+left: -252px;
+    z-index:1;
+}
+#grass4{
+    position: absolute;
+top: 404px;
+left: -332px;
+    z-index:1;
+}
+#day6{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px; 
+}
+.house{
+    position: relative;
+width: 520%;
+height: 857%;
+top: -152px;
+left: 0px; 
+    z-index:1;
+}
+#day7{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px; 
+}
+#road1{
+position: absolute;
+width: 192%;
+height: 295%;
+top: 588px;
+left: -864px;
+transform: rotate(65deg);
+    z-index:1;
+ 
+}
+#road2{
+position: absolute;
+width: 192%;
+height: 295%;
+top: 544px;
+left: -865px;
+transform: rotate(63deg);
+    z-index:1;
+}
+#day8{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px; 
+}
+#bananatree{
+  position: absolute;
+width: 167%;
+height: 246%;
+top: 147px;
+left: 440px;
+    z-index:1;
+}
+#day9{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px; 
+}
+.bird{
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+}
+#bird1{
+   position: absolute;
+width: 100%;
+height: 100%;
+top: -47px;
+left: -36px;
+transform: rotate(-8deg);
+}
+
+#day10{
+    position: absolute;
+    background:#fff;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity:0;
+}
+#day11{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+.car{
+position: absolute;
+width: 100%;
+height: 95%;
+top: 486px;
+left: 337px;
+    z-index:2;
+    
+}
+#motorroad{
+position: absolute;
+width: 97%;
+height: 128%;
+top: 231px;
+left: 2px;
+transform: rotate(-22deg);
+    z-index: 0;
+}
+#motorroad2{
+position: absolute;
+width: 97%;
+height: 100%;
+top: 330px;
+left: -295px;
+transform: rotate(-7deg);
+z-index: 0;
+}
+#motorroad3{
+position: absolute;
+width: 97%;
+height: 100%;
+top: -50px;
+left: -927px;
+transform: rotate(-205deg);
+z-index: 0;
+}
+
